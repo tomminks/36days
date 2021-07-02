@@ -7,8 +7,9 @@ let msg = 'Твой диван под номером';
 $('#header')
     .html(msg + ' ');
 $('#parametr')
-    .click(function getRandomIntInclusive(min, max) {
+    .click(function () {
   min = Math.ceil(min);
   max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min; //Максимум и минимум включаются
+  var item1 = return Math.floor(Math.random() * (max - min + 1)) + min; //Максимум и минимум включаются
+  $('#button').html(item1);
 });
